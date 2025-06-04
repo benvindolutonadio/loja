@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOJA DE ROUPAS BV e COMPANIA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header { 
+      background-color: #060aee;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 0px;
+      text-align: center;
+     
+    }
+    .produtos {
+       display: flex; 
+       gap: 10%;
+      text-align: center;
+    
+    }
+   
+    .preco {
+      color: green;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      border: none;
+      background-color: #7d94ac;
+      color: rgb(240, 238, 238);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: blue;
+      color: rgb(253, 251, 251);
+      padding: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #041cf5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LOJA DE RUOPAS BV e COMPANIA</h1>
+  </header>
+
+  <section>
+    <h2>Sobre a Loja</h2>
+    <p>Bem-vindo à nossa loja de roupas! Oferecemos roupas de qualidade para todas as idades e estilos. <br> </br> Nosso compromisso é com a moda, conforto e preço justo.</p>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Email: contato@lojaroupasbv.com</p>
+    <p>Telefone: +244 912 345 678</p>
+  </section>
+
+  <section>
+    <h2>Produtos Disponíveis</h2>
+    <div class="produtos">
+      <div class="produto">
+        <h3>Camiseta Masculina</h3>
+        <img src="t.jpg"
+        width="200px"
+        height="200px">
+        <p class="preco">3.500 Kz</p>
+        <button onclick="comprar('Camiseta Masculina')">Comprar</button>
+        
+      </div>
+      <div class="produto">
+        <h3>Vestido Feminino</h3>
+        <img src="V.jpg"
+        width="200px"
+        height="200px">
+        <p class="preco">7.200 Kz</p>
+        <button onclick="comprar('Vestido Feminino')">Comprar</button>
+    
+      </div>
+      <div class="produto">
+        <h3>Calça Jeans</h3>
+        <img src="C1.jpg"
+        width="200px"
+        height="200px">
+        <p class="preco">5.800 Kz</p>
+        <button onclick="comprar('Calça Jeans')">Comprar</button>
+        
+      </div>
+      <div class="produto">
+        <h3>Tênis </h3>
+        <img src="tn1.jpg" 
+        width="200px"
+        height="200px">
+        <p class="preco">10.000 Kz</p>
+        <button onclick="comprar('Tênis')">Comprar</button>
+       
+      </div>
+    </div>
+
+    <h3>Envie sua mensagem:</h3>
+      <form>
+        <input type="text" placeholder="Seu nome">
+        <input type="email" placeholder="Seu email">
+        <textarea placeholder="Sua mensagem"></textarea>
+        <br> </br>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function comprar(produto) {
+      alert('Você escolheu comprar: ' + produto);
+    }
+    function verMais(produto) {
+      alert('Mais informações sobre: ' + produto);
+    }
+  </script>
+  <footer>
+    © 2025 Loja de Roupas BV e compania - loja de moda ao seu dispor 
+</footer>
+</body>
+</html>
+ 
